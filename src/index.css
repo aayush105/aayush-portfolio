@@ -87,3 +87,22 @@ body::before {
   z-index: 9999;
   opacity: 0.35;
 }
+
+/* ══════ SCROLLBAR ══════ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-h);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--surface);
+}
